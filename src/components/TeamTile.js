@@ -1,16 +1,16 @@
-// import { React } from 'react';
-// import { Link } from 'react-router-dom';
-// import "..assets/Isp.scss";
+import { React } from 'react';
+import { Link } from 'react-router-dom';
+import "../assets/isp.scss";
 
-// export const TeamTile = ({teamName}) => {
+export const TeamTile = ({teamName}) => {
 
-//     return (
-//         <div className="TeamTile">
-//             <h1>
-//                     <Link to={`/teams/${teamName}`}>
-//                         {teamName}
-//                     </Link>
-//                 </h1>
-//         </div>
-//     )
-// }
+    return (
+        <div className="TeamTile">
+            <h1>
+                    <Link to={`/team/${teamName}`}>
+                        {teamName}
+                    </Link>
+                </h1>
+        </div>
+    )
+}

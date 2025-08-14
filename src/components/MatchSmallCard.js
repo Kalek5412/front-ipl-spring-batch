@@ -1,6 +1,6 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
-import "../assets/Isp.scss";
+import "../assets/isp.scss";
 
 export const MatchSmallCard = ({ match, teamName }) => {
   if (!match) return null;

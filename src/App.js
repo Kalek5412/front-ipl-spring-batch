@@ -2,12 +2,15 @@ import "./App.scss";
 import { TeamPage } from "../src/pages/TeamPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MatchPage } from "./pages/MatchPage";
-//import { HomePage } from './pages/HomePage';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
         <Routes>
           <Route path="/team/:teamName" element={<TeamPage />} />
         </Routes>
